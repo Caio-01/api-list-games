@@ -20,7 +20,11 @@ public class Game {
     private String platforms;
     private Double score;
     private String imgUrl;
+
+    @Column(columnDefinition = "TEXT") // Faz com que o banco entenda mais que 245 caracteres
     private String shortDescription;
+
+    @Column(columnDefinition = "TEXT")
     private String longDescription;
 
     // Construtor sem argumentos
